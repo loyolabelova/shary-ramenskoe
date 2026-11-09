@@ -11,18 +11,46 @@
 <meta property="og:description" content="«Висят долго, цена самая низкая по городу» – пишут о нас на Яндекс.Картах. Надуем при вас в магазине или привезём к празднику. Всё для праздника – в одном магазине.">
 <meta property="og:image" content="assets/hero.webp">
 <link rel="preload" as="image" href="assets/hero.webp" fetchpriority="high">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%275%27 fill=%27%232f6b4d%27/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect x=%276%27 y=%276%27 width=%2720%27 height=%2720%27 rx=%2710%27 fill=%27%23ffe100%27 stroke=%27%231b1b1f%27 stroke-width=%271.5%27 stroke-dasharray=%273 2%27/%3E%3Ccircle cx=%2716%27 cy=%2715%27 r=%275%27 fill=%27%23f0408a%27/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Tenor+Sans&family=Onest:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root { --c-canvas: #f8f1ed; --c-surface: #fffaf8; --c-ink: #1d2a22; --c-ink-soft: #5a675f; --c-accent: #2f6b4d; --c-accent-ink: #f8f3ef; --c-accent-deep: #2f6b4d; --f-display: "Tenor Sans", "Trebuchet MS", "Segoe UI", system-ui, sans-serif; --f-text: "Onest", "Segoe UI", system-ui, sans-serif; --h1k: 1; }
-</style>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style-prod.css">
+<style>
+:root { --c-canvas: #fffdf4; --c-surface: #ffffff; --c-ink: #1b1b1f; --c-ink-soft: #585860; --c-accent: #e0226c; --c-accent-ink: #ffffff; --c-accent-deep: #c8175c; --f-display: "Oswald", "Arial Narrow", "Segoe UI", system-ui, sans-serif; --f-text: "Nunito", "Segoe UI", system-ui, sans-serif; --h1k: 1.08; }
+/* палитра логотипа: жёлтое кольцо с чёрным пунктиром, розовые буквы, разноцветные «ШАРИКИ» */
+:root { --yellow: #ffe100; --red: #e8202a; --green: #17a63a; --orange: #ff8a00; --blue: #1a9fe0; --pink: #f0408a;
+  --tint: #fff0f6; --hair: #ece8dc; --shadow: 0 18px 44px -20px rgba(60, 50, 0, .35); }
+body { background: radial-gradient(circle at 6% 4%, rgba(255,225,0,.28) 0 110px, transparent 111px), radial-gradient(circle at 95% 22%, rgba(240,64,138,.10) 0 90px, transparent 91px), radial-gradient(circle at 88% 70%, rgba(26,159,224,.08) 0 130px, transparent 131px), var(--c-canvas); }
+h1, h2, h3 { font-weight: 700; letter-spacing: 0; line-height: 1.08; }
+.s-bar { border-bottom: 3px dashed var(--yellow); }
+.s-bar__brand { font: 700 1.3rem/1 var(--f-display); letter-spacing: .01em; }
+.s-bar__brand i { width: 1em; height: 1em; background: var(--yellow); border: 2px dashed #1b1b1f; }
+.s-bar__brand .w { color: var(--pink); }
+.s-bar__brand .l1 { color: var(--red); } .s-bar__brand .l2 { color: var(--green); } .s-bar__brand .l3 { color: var(--orange); } .s-bar__brand .l4 { color: var(--blue); }
+.s-btn { font-weight: 800; box-shadow: 0 4px 0 #a3104b; }
+.s-btn--ghost { box-shadow: none; }
+.s-widget { border: 3px solid var(--yellow); }
+.s-ticks li:nth-child(4n+1)::before { background: var(--red); }
+.s-ticks li:nth-child(4n+2)::before { background: var(--green); }
+.s-ticks li:nth-child(4n+3)::before { background: var(--orange); }
+.s-ticks li:nth-child(4n+4)::before { background: var(--blue); }
+.s-steps__item:nth-child(4n+1) .s-steps__n { background: var(--red); }
+.s-steps__item:nth-child(4n+2) .s-steps__n { background: var(--green); }
+.s-steps__item:nth-child(4n+3) .s-steps__n { background: var(--orange); color: #1b1b1f; }
+.s-steps__item:nth-child(4n+4) .s-steps__n { background: var(--blue); }
+.s-promises li:nth-child(4n+1) { border-top-color: var(--red); }
+.s-promises li:nth-child(4n+2) { border-top-color: var(--green); }
+.s-promises li:nth-child(4n+3) { border-top-color: var(--orange); }
+.s-promises li:nth-child(4n+4) { border-top-color: var(--blue); }
+.s-reviews__stars::after { color: #f5b800; }
+.s-incl > div:first-child { background: #fff7c4; }
+.s-contacts { background: #fff7c4; border: 2px dashed #1b1b1f; }
+</style>
 </head>
 <body class="s-prod" id="top" data-wa="79262718414" data-tg="" data-max="">
 <header class="s-bar" data-s-bar>
-  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i>Воздушные шары</a>
+  <a class="s-bar__brand" href="#top"><i aria-hidden="true"></i><span><span class="w">Воздушные</span> <span class="l1">ш</span><span class="l2">а</span><span class="l3">р</span><span class="l4">ы</span></span></a>
   <div class="s-bar__right">
     <a class="s-bar__tel" href="tel:+79262718414">+7 (926) 271-84-14</a>
     <a class="s-btn s-btn--sm" href="#widget">Написать в WhatsApp</a>
